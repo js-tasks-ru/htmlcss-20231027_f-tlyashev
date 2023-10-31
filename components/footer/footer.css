@@ -1,0 +1,23 @@
+.footer {
+    background: #FFF;
+}
+
+.footer__title {
+    color: #212429;
+    font-family: Inter, serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.footer__text {
+    width: 640px;
+    color: #212429;
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
