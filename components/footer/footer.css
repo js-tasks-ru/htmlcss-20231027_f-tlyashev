@@ -9,10 +9,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: 48px;
+    padding-bottom: 32px;
 }
 
 .footer__text {
-    width: 640px;
+    max-width: 640px;
+    margin: 0 auto;
     color: #212429;
     text-align: center;
     font-family: Inter, serif;
@@ -20,4 +22,5 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+
 }
