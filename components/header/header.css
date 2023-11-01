@@ -1,0 +1,16 @@
+.header {
+    background: #FFF;
+}
+
+.header__menu {
+    padding: 24px 165px 38px;
+}
+
+.header__title {
+    color: #212429;
+    font-family: Inter, serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px;
+}
