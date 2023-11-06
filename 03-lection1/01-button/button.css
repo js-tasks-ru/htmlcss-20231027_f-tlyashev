@@ -1,12 +1,7 @@
 /* Стилизация кнопки */
-button {
-    border: none;
-    background: none;
-}
-
 .button {
-    border-radius: 8px;
-    width: 182px;
+    border-radius: 0.5rem;
+    padding: 14px 16px;
     height: 48px;
     flex-shrink: 0;
     text-align: center;
@@ -16,6 +11,7 @@ button {
     font-weight: 500;
     line-height: normal;
     cursor: pointer;
+    transition: opacity 200ms ease-in-out, background 500ms ease-in-out;
 }
 
 .button_primary {
@@ -25,7 +21,6 @@ button {
 
 .button_primary:enabled:hover {
     background: #2342C0;
-    transition: opacity 200ms ease-in-out, background 500ms ease-in-out;
 }
 
 .button_secondary {
@@ -35,7 +30,6 @@ button {
 
 .button_secondary:enabled:hover {
     background: #5028C6;
-    transition: opacity 200ms ease-in-out, background 500ms ease-in-out;
 }
 
 .button_alternate {
@@ -44,11 +38,11 @@ button {
 }
 
 .button_alternate:enabled:hover {
-    border: 1px solid var(--black);
-    transition: border 500ms ease-in-out;
+    border-color: var(--black);
+    transition: border 500ms linear;
 }
 
 .button:disabled {
     opacity: 0.5;
-    cursor: not-allowed;
+    pointer-events: none;
 }
