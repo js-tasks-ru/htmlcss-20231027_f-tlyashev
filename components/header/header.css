@@ -1,16 +1,14 @@
 .header {
-    background: #FFF;
-}
-
-.header__menu {
-    padding: 24px 165px 38px;
+    background: var(--white);
+    padding: 96px 0 77px;
 }
 
 .header__title {
-    color: #212429;
+    color: var(--black);
     font-family: Inter, serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 500;
     line-height: 64px;
+    margin: 0 auto;
 }
