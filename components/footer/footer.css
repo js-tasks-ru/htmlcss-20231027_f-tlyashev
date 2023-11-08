@@ -1,26 +1,28 @@
 .footer {
-    background: #FFF;
+    background: var(--white);
 }
 
 .footer__title {
-    color: #212429;
+    margin: 0 auto;
+    color: var(--black);
     font-family: Inter, serif;
     font-size: 38px;
     font-style: normal;
     font-weight: 500;
     line-height: 48px;
-    padding-bottom: 32px;
+    padding: 71px 0 32px;
+    text-align: center;
 }
 
 .footer__text {
     max-width: 640px;
     margin: 0 auto;
-    color: #212429;
+    color: var(--black);
     text-align: center;
     font-family: Inter, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-
+    padding-bottom: 136px;
 }

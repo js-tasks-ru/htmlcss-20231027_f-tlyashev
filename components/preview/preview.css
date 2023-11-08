@@ -1,0 +1,28 @@
+.preview {
+    background: #F9FAFC;
+    padding: 68px 0 204px;
+}
+
+.preview__card-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.preview__card {
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
+    flex-basis: 350px;
+}
+
+.preview__card-footer {
+    color: var(--black);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
