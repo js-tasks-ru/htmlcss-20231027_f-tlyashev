@@ -10,14 +10,14 @@
     flex-wrap: wrap;
 }
 
-.card {
+.preview__card {
     border-radius: 12px;
     background: var(--white);
     box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
     flex-basis: 350px;
 }
 
-.card__footer {
+.preview__card-footer {
     color: var(--black);
     text-align: center;
     font-family: Roboto;
