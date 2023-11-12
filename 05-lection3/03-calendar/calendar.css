@@ -56,5 +56,5 @@
 }
 
 .calendar__item_between {
-	background: var(--between);
+	background: rgba(158, 175, 245, 0.2);
 }

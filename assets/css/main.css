@@ -17,8 +17,6 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --notification: #D84910;
-    
-    --between: rgba(158, 175, 245, 0.2);
 
     --error: var(--red);
     --success: var(--blue);
