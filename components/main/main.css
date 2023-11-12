@@ -10,40 +10,6 @@
 	grid-column-gap: 56px;
 }
 
-.main__sidebar-title {
-	color: var(--black);
-	font-family: Inter;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 26px;
-	margin: 0;
-	padding-bottom: 16px;
-	cursor: default
-}
-
-.main__sidebar-links {
-	display: flex;
-	flex-direction: column;
-	row-gap: 4px;
-}
-
-.main__sidebar-links a {
-	color: var(--black);
-	font-size: 14px;
-	line-height: 22px;
-	text-decoration: none;
-}
-
-.main__sidebar-links a:hover {
-	cursor: pointer;
-	color: var(--grey-3);
-}
-
-.main__sidebar-links a:active {
-	color: var(--notification);
-}
-
 .main__component {
 	border-radius: 12px;
   background: var(--white);

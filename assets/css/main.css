@@ -3,6 +3,7 @@
 @import '../../components/header/header.css';
 @import '../../components/preview/preview.css';
 @import '../../components/main/main.css';
+@import '../../components/sidebar/sidebar.css';
 @import '../../components/footer/footer.css';
 @import '../../components/container/container.css';
 @import "normalize.css";

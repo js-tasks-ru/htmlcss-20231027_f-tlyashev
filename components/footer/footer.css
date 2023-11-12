@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-.footer__title_component {
+.footer_template .footer__title {
     padding: 92px 0 56px;
     color: var(--grey-3);
     font-size: 12px;
