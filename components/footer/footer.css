@@ -2,6 +2,10 @@
     background: var(--white);
 }
 
+.footer_template {
+    background: #F9FAFC;
+}
+
 .footer__title {
     margin: 0 auto;
     color: var(--black);
@@ -12,6 +16,15 @@
     line-height: 48px;
     padding: 71px 0 32px;
     text-align: center;
+}
+
+.footer_template .footer__title {
+    padding: 92px 0 56px;
+    color: var(--grey-3);
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
 }
 
 .footer__text {

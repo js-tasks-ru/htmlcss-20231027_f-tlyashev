@@ -3,6 +3,11 @@
     padding: 96px 0 77px;
 }
 
+.header_template {
+    padding: 0;
+    height: 82px; /*Временно, пока внутри не будет компонента. По макету сложно определить какие там отступы без начинки*/
+}
+
 .header__title {
     color: var(--black);
     font-family: Inter, serif;

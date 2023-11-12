@@ -1,0 +1,33 @@
+.sidebar__title {
+	color: var(--black);
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	margin: 0;
+	padding-bottom: 16px;
+	cursor: default
+}
+
+.sidebar__link {
+	display: flex;
+	flex-direction: column;
+	row-gap: 4px;
+}
+
+.sidebar__link a {
+	color: var(--black);
+	font-size: 14px;
+	line-height: 22px;
+	text-decoration: none;
+}
+
+.sidebar__link a:hover {
+	cursor: pointer;
+	color: var(--grey-3);
+}
+
+.sidebar__link a:active {
+	color: var(--notification);
+}

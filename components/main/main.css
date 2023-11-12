@@ -1,0 +1,17 @@
+.main {
+	background: #F9FAFC;
+}
+
+.main__sections {
+	padding: 36px 0 0;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 229px 1fr;
+	grid-column-gap: 56px;
+}
+
+.main__component {
+	border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
+}
