@@ -4,18 +4,17 @@
 }
 
 .preview__card-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
 }
 
 .preview__card {
     border-radius: 12px;
     background: var(--white);
     box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
-    flex-basis: 350px;
 }
 
 .preview__card-title {
@@ -45,11 +44,10 @@
     .preview {
         padding: 32px 0 90px;
     }
-    .preview__card {
-        flex-basis: 250px;
-    }
     .preview__card-grid {
-        gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 24px;
     }
     .preview__card-title {
         font-size: 18px;
@@ -70,7 +68,6 @@
     }
     .preview__card {
         border-radius: 8px;
-        flex-basis: 163px;
     }
     .preview__card-grid {
         gap: 16px;
