@@ -31,3 +31,9 @@
 .sidebar__link a:active {
 	color: var(--notification);
 }
+
+@media screen and (max-width: 768px) {
+	.sidebar {
+		display: none;
+	}
+}

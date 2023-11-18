@@ -5,6 +5,7 @@
 
 .header_template {
     padding: 0;
+    background: #F9FAFC;
     height: 82px; /*Временно, пока внутри не будет компонента. По макету сложно определить какие там отступы без начинки*/
 }
 
@@ -45,11 +46,12 @@
         font-weight: 400;
         font-size: 2rem;
     }
-
+    .header_template {
+        height: 64px;
+    }
     .header__menu-icon {
         display: block;
     }
-}
 
 @media screen and (max-width: 576px) {
     .header__title {
