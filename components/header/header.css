@@ -25,7 +25,7 @@
     padding-bottom: 38px;
 }
 
-.header__logo svg {
+.header__logo-svg {
     fill: var(--black);
 }
 
