@@ -3,6 +3,15 @@
 	position: relative;
 }
 
+.tooltip__icon {
+	width: 24px;
+	height: 24px;
+}
+
+.tooltip__icon:hover {
+	fill: var(--blue);
+}
+
 .tooltip__trigger:hover {
 	cursor: pointer;
 }

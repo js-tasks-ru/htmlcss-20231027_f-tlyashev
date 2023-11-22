@@ -34,6 +34,11 @@
     padding: 0 32px 32px;
 }
 
+.accordion__marker {
+    width: 18px;
+    height: 10px;
+}
+
 .accordion__item[open] .accordion__marker {
     transform: rotate(180deg);
 }
