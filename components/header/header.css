@@ -1,12 +1,11 @@
 .header {
     background: var(--white);
-    padding: 96px 0 77px;
+    padding: 24px 0 38px;
 }
 
 .header_template {
-    padding: 0;
+    padding: 16px 0;
     background: #F9FAFC;
-    height: 82px; /*Временно, пока внутри не будет компонента. По макету сложно определить какие там отступы без начинки*/
 }
 
 .header__menu-icon {
@@ -15,6 +14,19 @@
     left: 16px;
     cursor: pointer;
     display: none;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    padding-bottom: 38px;
+}
+
+.header__logo-svg {
+    fill: var(--black);
 }
 
 .header__title {
@@ -46,12 +58,16 @@
         font-weight: 400;
         font-size: 2rem;
     }
-    .header_template {
-        height: 64px;
+    .header {
+        padding: 17px 0 38px;
     }
     .header__menu-icon {
         display: block;
     }
+    .header__inner {
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 576px) {
     .header__title {
