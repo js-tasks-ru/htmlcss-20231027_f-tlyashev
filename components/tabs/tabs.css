@@ -3,13 +3,6 @@
 	left: -100vw
 }
 
-.tabs {
-	width: 100%;
-	max-width: 100%;
-	margin: 0 auto;
-	position: relative;
-}
-
 .tabs__content {
   display: none;
 }
@@ -37,12 +30,12 @@
 	color: var(--black);
 	border-bottom: 5px solid var(--black);
 	padding-bottom: 8px;
-}
+}	
 
-/* .tabs input:focus ~ .tabs__scroller 
+.tabs input:focus ~ .tabs__scroller 
 label {
 	text-decoration: underline;
-} */
+}
 
 #all-tab:checked ~ .tabs__scroller label[for="all-tab"],
 #elements-tab:checked ~ .tabs__scroller label[for="elements-tab"],
