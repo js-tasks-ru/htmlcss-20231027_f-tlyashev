@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Страница бургер-меню -->
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./mobile-menu.css">
+    <script defer src="./mobile-menu.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <a class="header__menu-icon" id='mobile-menu-open'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </a>
+    <div class='mobile-menu' id='mobile-menu'>
+        <div class="mobile-menu__modal">
+            <div class='mobile-menu__header'>
+                <div class='mobile-menu__control' id='mobile-menu-close'>
+                    <svg class='mobile-menu__icon-close'>
+                        <use href='/assets/images/sprite.svg#close'></use>
+                    </svg>
+                </div>
+                <a href='#'>
+                    <svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="m0 1h30v30h-30z"></path>
+                            <rect height="32" rx="16" width="32" x="38"></rect>
+                            <path d="m78 0 32 32h-32z"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class='mobile-menu__sections'>
+                <h4 class='mobile-menu__title'>Elements</h4>
+                <a href="#" class='mobile-menu__link'>Avatar</a>
+                <a href="#" class='mobile-menu__link'>Custom form elements</a>
+                <a href="#" class='mobile-menu__link'>Button</a>
+                <a href="#" class='mobile-menu__link'>Avatar</a>
+                <a href="#" class='mobile-menu__link'>Custom form elements</a>
+                <a href="#" class='mobile-menu__link'>Button</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
