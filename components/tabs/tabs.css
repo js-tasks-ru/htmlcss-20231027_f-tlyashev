@@ -1,4 +1,4 @@
-.tabs > input {
+.tabs__input {
 	position: absolute;
 	left: -100vw
 }
@@ -13,7 +13,7 @@
 	overflow: hidden;
 }
 
-.tabs__scroller > label {
+.tabs__ladel {
 	color: var(--grey-3);
 	font-family: Inter;
 	font-size: 16px;
@@ -25,30 +25,30 @@
 	display: inline-flex;
 }
 
-.tabs__scroller > label:hover,
-.tabs__scroller > label:focus {
+.tabs__ladel:hover,
+.tabs__ladel:focus {
 	color: var(--black);
 	border-bottom: 5px solid var(--black);
 	padding-bottom: 8px;
 }	
 
-.tabs input:focus ~ .tabs__scroller 
-label {
+.tabs__input:focus ~ .tabs__scroller 
+.tabs__ladel {
 	text-decoration: underline;
 }
 
-#all-tab:checked ~ .tabs__scroller label[for="all-tab"],
-#elements-tab:checked ~ .tabs__scroller label[for="elements-tab"],
-#containers-tab:checked ~ .tabs__scroller label[for="containers-tab"],
-#templates-tab:checked ~ .tabs__scroller label[for="templates-tab"] {
+#all-tab:checked ~ .tabs__scroller .tabs__ladel[for="all-tab"],
+#elements-tab:checked ~ .tabs__scroller .tabs__ladel[for="elements-tab"],
+#containers-tab:checked ~ .tabs__scroller .tabs__ladel[for="containers-tab"],
+#templates-tab:checked ~ .tabs__scroller .tabs__ladel[for="templates-tab"] {
 	color: var(--black);
 	border-bottom: 5px solid var(--black);
 	padding-bottom: 8px;
 }
 
-#all-tab:checked ~ section .tabs__all-tab,
-#elements-tab:checked ~ section .tabs__content-elements,
-#containers-tab:checked ~ section .tabs__content-containers,
-#templates-tab:checked ~ section .tabs__content-templates {
+#all-tab:checked ~ .tabs__section .tabs__content_all-tab,
+#elements-tab:checked ~ .tabs__section .tabs__content_elements,
+#containers-tab:checked ~ .tabs__section .tabs__content_containers,
+#templates-tab:checked ~ .tabs__section .tabs__content_templates {
 	display: block;
 }

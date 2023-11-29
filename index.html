@@ -35,18 +35,18 @@
     </header>
     <main>
         <div class="tabs">
-            <input type="radio" id="all-tab" name='main-menu' checked>
-            <input type="radio" id="elements-tab" name='main-menu'>
-            <input type="radio" id="containers-tab" name='main-menu'>
-            <input type="radio" id="templates-tab" name='main-menu'>
+            <input class='tabs__input' type="radio" id="all-tab" name='main-menu' checked>
+            <input class='tabs__input' type="radio" id="elements-tab" name='main-menu'>
+            <input class='tabs__input' type="radio" id="containers-tab" name='main-menu'>
+            <input class='tabs__input' type="radio" id="templates-tab" name='main-menu'>
             <div class="container tabs__scroller">
-                <label for="all-tab">All components</label>
-                <label for="elements-tab">Elements</label>
-                <label for="containers-tab">Containers</label>
-                <label for="templates-tab">Templates</label>
+                <label class='tabs__ladel' for="all-tab">All components</label>
+                <label class='tabs__ladel' for="elements-tab">Elements</label>
+                <label class='tabs__ladel' for="containers-tab">Containers</label>
+                <label class='tabs__ladel' for="templates-tab">Templates</label>
             </div>
-            <section>
-                <div class="tabs__content tabs__all-tab">
+            <section class='tabs__section'>
+                <div class="tabs__content tabs__content_all-tab">
                     <div class="preview">
                         <div class="container preview__card-grid">
                             <div class="preview__card">
@@ -76,11 +76,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="tabs__content tabs__content-elements">
+                <div class="tabs__content tabs__content_elements">
                 </div>
-                <div class="tabs__content tabs__content-containers">
+                <div class="tabs__content tabs__content_containers">
                 </div>
-                <div class="tabs__content tabs__content-templates">
+                <div class="tabs__content tabs__content_templates">
                 </div>
             </section>
         </div>
