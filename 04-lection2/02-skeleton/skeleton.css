@@ -11,11 +11,23 @@
 
 .skeleton__avatar {
     border-radius: 50%;
-    background-color: var(--grey-2);
+    
     height: 64px;
     width: 64px;
     flex: none;
     margin-right: 16px;
+}
+
+.skeleton__avatar,
+.skeleton__line {
+    animation-name: bg-loading;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    background-position: -50%;
+    background: linear-gradient(93deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    background-size: 200%;
 }
 
 .skeleton__line-group {
@@ -28,7 +40,6 @@
 
 .skeleton__line {
     height: 20px;
-    background: linear-gradient(93deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 .skeleton__line_short {
@@ -39,5 +50,11 @@
     width: 75%;
 }
 
-
-
+@keyframes bg-loading {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -100%;
+    }
+}
