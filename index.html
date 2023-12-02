@@ -33,32 +33,56 @@
         </div>
         <h1 class="container header__title">Reusable component library</h1>
     </header>
-    <main class="preview">
-        <div class="container preview__card-grid">
-            <div class="preview__card">
-                <h4 class="preview__card-title">Tooltip</h4>
-                <p class="preview__card-text">Container</p>
+    <main>
+        <div class="tabs">
+            <input class='tabs__input' type="radio" id="all-tab" name='main-menu' checked>
+            <input class='tabs__input' type="radio" id="elements-tab" name='main-menu'>
+            <input class='tabs__input' type="radio" id="containers-tab" name='main-menu'>
+            <input class='tabs__input' type="radio" id="templates-tab" name='main-menu'>
+            <div class="container tabs__scroller">
+                <label class='tabs__ladel' for="all-tab">All components</label>
+                <label class='tabs__ladel' for="elements-tab">Elements</label>
+                <label class='tabs__ladel' for="containers-tab">Containers</label>
+                <label class='tabs__ladel' for="templates-tab">Templates</label>
             </div>
-            <div class="preview__card">
-                <h4 class="preview__card-title">Custom form elements</h4>
-                <p class="preview__card-text">Element</p>
-            </div>
-            <div class="preview__card">
-                <h4 class="preview__card-title">Calendar</h4>
-                <p class="preview__card-text">Container</p>
-            </div>
-            <div class="preview__card">
-                <h4 class="preview__card-title">Modal dialog</h4>
-                <p class="preview__card-text">Container</p>
-            </div>
-            <div class="preview__card">
-                <h4 class="preview__card-title">Histogram</h4>
-                <p class="preview__card-text">Element</p>
-            </div>
-            <div class="preview__card">
-                <h4 class="preview__card-title">Avatar</h4>
-                <p class="preview__card-text">Element</p>
-            </div>
+            <section class='tabs__section'>
+                <div class="tabs__content tabs__content_all-tab">
+                    <div class="preview">
+                        <div class="container preview__card-grid">
+                            <div class="preview__card">
+                                <h4 class="preview__card-title">Tooltip</h4>
+                                <p class="preview__card-text">Container</p>
+                            </div>
+                            <div class="preview__card">
+                                <h4 class="preview__card-title">Custom form elements</h4>
+                                <p class="preview__card-text">Element</p>
+                            </div>
+                            <div class="preview__card">
+                                <h4 class="preview__card-title">Calendar</h4>
+                                <p class="preview__card-text">Container</p>
+                            </div>
+                            <div class="preview__card">
+                                <h4 class="preview__card-title">Modal dialog</h4>
+                                <p class="preview__card-text">Container</p>
+                            </div>
+                            <div class="preview__card">
+                                <h4 class="preview__card-title">Histogram</h4>
+                                <p class="preview__card-text">Element</p>
+                            </div>
+                            <div class="preview__card">
+                                <h4 class="preview__card-title">Avatar</h4>
+                                <p class="preview__card-text">Element</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content tabs__content_elements">
+                </div>
+                <div class="tabs__content tabs__content_containers">
+                </div>
+                <div class="tabs__content tabs__content_templates">
+                </div>
+            </section>
         </div>
     </main>
     <footer class="footer">
