@@ -1,0 +1,18 @@
+html[data-theme-dark] {
+	--background-color: var(--grey-4);
+	--font-color: #ffffff75;
+	--bg-component: #212429;
+	--black: #ffffff75;
+}
+
+.dark-mode__changer {
+	display: flex;
+	gap: 12px;
+}
+
+.dark-mode__icon-light,
+.dark-mode__icon-dark {
+	width: 24px;
+	height: 24px;
+	fill: var(--grey-3);
+}
