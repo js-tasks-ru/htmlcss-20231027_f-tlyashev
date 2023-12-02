@@ -28,7 +28,8 @@
 	color: var(--grey-3);
 }
 
-.sidebar__link a:active {
+.sidebar__link a:active,
+.sidebar__link a.sidebar__link_active {
 	color: var(--notification);
 }
 

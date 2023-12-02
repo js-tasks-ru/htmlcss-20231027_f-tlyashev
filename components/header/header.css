@@ -59,13 +59,16 @@
         font-size: 2rem;
     }
     .header {
-        padding: 17px 0 38px;
+        padding: 17px 0 16px;
     }
     .header__menu-icon {
         display: block;
     }
     .header__inner {
         justify-content: center;
+    }
+    .header__logo {
+        padding-bottom: 16px;
     }
 }
 

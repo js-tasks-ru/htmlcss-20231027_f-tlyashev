@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+
+<head>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<title>Component Custom form elements</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script defer src="/09-lection7/01-burger-menu/mobile-menu.js"></script>
+</head>
+
+<body>
+	<div class="page">
+		<header class="header header_template">
+			<div class='header__inner container'>
+				<a class="header__menu-icon" id='mobile-menu-open'>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+				<div class='header__logo header__logo-svg'>
+					<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+						<g>
+							<path d="m0 1h30v30h-30z"></path>
+							<rect height="32" rx="16" width="32" x="38"></rect>
+							<path d="m78 0 32 32h-32z"></path>
+						</g>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class='mobile-menu' id='mobile-menu'>
+				<div class="mobile-menu__modal">
+					<div class='mobile-menu__header'>
+						<div class='mobile-menu__control' id='mobile-menu-close'>
+							<svg class='mobile-menu__icon-close'>
+								<use href='/assets/images/sprite.svg#close'></use>
+							</svg>
+						</div>
+						<a href='#'>
+							<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+								<g>
+									<path d="m0 1h30v30h-30z"></path>
+									<rect height="32" rx="16" width="32" x="38"></rect>
+									<path d="m78 0 32 32h-32z"></path>
+								</g>
+							</svg>
+						</a>
+					</div>
+					<div class='mobile-menu__sections'>
+						<h4 class='mobile-menu__title'>Elements</h4>
+						<a href='/pages/modal.html' class='mobile-menu__link'>Modal</a>
+						<a href='/pages/tooltip.html' class='mobile-menu__link'>Tooltip</a>
+						<a href="/pages/avatar.html" class='mobile-menu__link'>Avatar</a>
+						<a href="/pages/calendar.html" class='mobile-menu__link'>Calendar</a>
+						<a href="/pages/histogram.html" class='mobile-menu__link'>Histogram</a>
+						<a href="/pages/formgroup.html" class='mobile-menu__link mobile-menu__link_active'>Custom form elements</a>
+					</div>
+				</div>
+			</div>
+			<div class="container main__sections">
+				<aside class="sidebar">
+					<h4 class="sidebar__title">Components</h4>
+					<div class="sidebar__link">
+						<a href='/pages/modal.html'>Modal</a>
+						<a href='/pages/tooltip.html'>Tooltip</a>
+						<a href='/pages/avatar.html'>Avatar</a>
+						<a href='/pages/calendar.html'>Calendar</a>
+						<a href='/pages/histogram.html'>Histogram</a>
+						<a href='/pages/formgroup.html' class='sidebar__link_active'>Custom form elements</a>
+					</div>
+				</aside>
+				<div class="main__component">
+					<div class='container__component'>
+						<h3 class='main__component-title'>Custom form elements</h3>
+						<div class='container__checkbox-set'>
+							<label class='checkbox'>
+								<input type='checkbox' class='checkbox__input'>
+								<div class='checkbox__state'>
+									<div class='checkbox__control'>
+										<svg class='checkbox__icon'>
+											<use href='/assets/images/sprite.svg#check'></use>
+										</svg>
+									</div>
+									<div class='checkbox__title'>Default</div>
+								</div>
+							</label>
+							<label class='checkbox'>
+								<input type='checkbox' class='checkbox__input' checked>
+								<div class='checkbox__state'>
+									<div class='checkbox__control'>
+										<svg class='checkbox__icon'>
+											<use href='/assets/images/sprite.svg#check'></use>
+										</svg>
+									</div>
+									<div class='checkbox__title'>Checked</div>
+								</div>
+							</label>
+							<label class='checkbox'>
+								<input type='checkbox' class='checkbox__input' disabled>
+								<div class='checkbox__state'>
+									<div class='checkbox__control'>
+										<svg class='checkbox__icon'>
+											<use href='/assets/images/sprite.svg#check'></use>
+										</svg>
+									</div>
+									<div class='checkbox__title'>Disabled</div>
+								</div>
+							</label>
+							<label class='radio'>
+								<input type='radio' name='radio-name' class='radio__input'>
+								<div class='radio__state'>
+									<div class='radio__control'>
+										<div class='radio__icon'></div>
+									</div>
+									<div class='radio__title'>Default</div>
+								</div>
+							</label>
+							<label class='radio'>
+								<input type='radio' name='radio-name' class='radio__input' checked>
+								<div class='radio__state'>
+									<div class='radio__control'>
+										<div class='radio__icon'></div>
+									</div>
+									<div class='radio__title'>Selected</div>
+								</div>
+							</label>
+							<label class='radio'>
+								<input type='radio' name='radio-name' class='radio__input' disabled>
+								<div class='radio__state'>
+									<div class='radio__control'>
+										<div class='radio__icon'></div>
+									</div>
+									<div class='radio__title'>Disabled</div>
+								</div>
+							</label>
+							<label class='toggle'>
+								<input type='checkbox' class='toggle__input'>
+								<div class='toggle__state'>
+									<div class='toggle__control'>
+										<div class='toggle__icon'></div>
+									</div>
+									<div class='toggle__title'>Off</div>
+								</div>
+							</label>
+							<label class='toggle'>
+								<input type='checkbox' class='toggle__input' checked>
+								<div class='toggle__state'>
+									<div class='toggle__control'>
+										<div class='toggle__icon'></div>
+									</div>
+									<div class='toggle__title'>On</div>
+								</div>
+							</label>
+							<label class='toggle'>
+								<input type='checkbox' class='toggle__input' disabled>
+								<div class='toggle__state'>
+									<div class='toggle__control'>
+										<div class='toggle__icon'></div>
+									</div>
+									<div class='toggle__title'>Disabled</div>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer footer_template">
+			<h5 class="footer_template footer__title">Reusable component library</h5>
+		</footer>
+	</div>
+</body>
+
+</html>
