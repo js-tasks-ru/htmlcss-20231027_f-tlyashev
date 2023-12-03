@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
 </head>
 
 <body>
@@ -26,6 +27,22 @@
 							<rect height="32" rx="16" width="32" x="38"></rect>
 							<path d="m78 0 32 32h-32z"></path>
 						</g>
+					</svg>
+				</div>
+				<div class='dark-mode'>
+					<svg class='dark-mode__icon-light'>
+						<use href='/assets/images/sprite.svg#sun'></use>
+					</svg>
+					<label class='toggle'>
+						<input type='checkbox' class='toggle__input' id="theme-changer">
+						<div class='toggle__state'>
+							<div class='toggle__control'>
+								<div class='toggle__icon'></div>
+							</div>
+						</div>
+					</label>
+					<svg class='dark-mode__icon-dark'>
+						<use href='/assets/images/sprite.svg#moon'></use>
 					</svg>
 				</div>
 			</div>
@@ -50,6 +67,7 @@
 		</main>
 		<footer class="footer footer_template">
 			<h5 class="footer_template footer__title">Reusable component library</h5>
+
 		</footer>
 	</div>
 </body>

@@ -1,5 +1,5 @@
 .preview {
-    background: #F9FAFC;
+    background: var(--background-color);
     padding: 68px 0 204px;
 }
 
@@ -12,7 +12,7 @@
 
 .preview__card {
     border-radius: 12px;
-    background: var(--white);
+    background: var(--bg-component);
     box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
     display: flex;
     flex-direction: column;
