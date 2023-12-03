@@ -21,13 +21,15 @@
 					</svg>
 				</a>
 				<div class='header__logo header__logo-svg'>
-					<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
-						<g>
-							<path d="m0 1h30v30h-30z"></path>
-							<rect height="32" rx="16" width="32" x="38"></rect>
-							<path d="m78 0 32 32h-32z"></path>
-						</g>
-					</svg>
+					<a href='/index.html'>
+						<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path d="m0 1h30v30h-30z"></path>
+								<rect height="32" rx="16" width="32" x="38"></rect>
+								<path d="m78 0 32 32h-32z"></path>
+							</g>
+						</svg>
+					</a>
 				</div>
 			</div>
 		</header>
@@ -64,13 +66,13 @@
 			<div class="container main__sections">
 				<aside class="sidebar">
 					<h4 class="sidebar__title">Components</h4>
-					<div class="sidebar__link">
-						<a href='/pages/modal.html'>Modal</a>
-						<a href='/pages/tooltip.html'>Tooltip</a>
-						<a href='/pages/avatar.html'>Avatar</a>
-						<a href='/pages/calendar.html'>Calendar</a>
-						<a href='/pages/histogram.html' class='sidebar__link_active'>Histogram</a>
-						<a href='/pages/formgroup.html'>Custom form elements</a>
+					<div class="sidebar__menu">
+						<a class="sidebar__link" href='/pages/modal.html'>Modal</a>
+						<a class="sidebar__link" href='/pages/tooltip.html'>Tooltip</a>
+						<a class="sidebar__link" href='/pages/avatar.html'>Avatar</a>
+						<a class="sidebar__link" href='/pages/calendar.html'>Calendar</a>
+						<a class="sidebar__link sidebar__link_active" href='/pages/histogram.html'>Histogram</a>
+						<a class="sidebar__link" href='/pages/formgroup.html'>Custom form elements</a>
 					</div>
 				</aside>
 				<div class="main__component">
@@ -105,6 +107,113 @@
 								<div class="histogram__bar" style="height: 95%"></div>
 							</div>
 						</section>
+						<div class="tabs">
+							<input class='tabs__input' type="radio" id="html-tab" name='component-menu' checked>
+							<input class='tabs__input' type="radio" id="css-tab" name='component-menu'>
+							<div class="tabs__scroller tabs__scroller_component">
+								<label class='tabs__ladel' for="html-tab">HTML</label>
+								<label class='tabs__ladel' for="css-tab">CSS</label>
+							</div>
+							<section class='tabs__section'>
+								<div class="tabs__content tabs__content_html-code">
+									<figure>
+										<pre><xmp>
+<section class="histogram">
+	<div class="histogram__header">
+			<p class="histogram__title">Total orders</p>
+			<a class="histogram__link">View all</a>
+	</div>
+			<h4 class="histogram__total">50254</h4>
+	<div class="histogram__bars-container">
+			<div class="histogram__bar" style="height: 95%"></div>
+			<div class="histogram__bar" style="height: 75%"></div>
+			<div class="histogram__bar" style="height: 26%"></div>
+			<div class="histogram__bar" style="height: 15%"></div>
+			<div class="histogram__bar" style="height: 80%"></div>
+			<div class="histogram__bar" style="height: 35%"></div>
+			<div class="histogram__bar" style="height: 46%"></div>
+			<div class="histogram__bar" style="height: 55%"></div>
+			<div class="histogram__bar" style="height: 99%"></div>
+			<div class="histogram__bar" style="height: 19%"></div>
+			<div class="histogram__bar" style="height: 56%"></div>
+			<div class="histogram__bar" style="height: 32%"></div>
+			<div class="histogram__bar" style="height: 25%"></div>
+			<div class="histogram__bar" style="height: 65%"></div>
+			<div class="histogram__bar" style="height: 79%"></div>
+			<div class="histogram__bar" style="height: 15%"></div>
+			<div class="histogram__bar" style="height: 88%"></div>
+			<div class="histogram__bar" style="height: 65%"></div>
+			<div class="histogram__bar" style="height: 44%"></div>
+			<div class="histogram__bar" style="height: 95%"></div>
+	</div>
+</section>
+										</xmp></pre>
+									</figure>
+								</div>
+								<div class="tabs__content tabs__content_css-code">
+									<figure>
+										<pre><xmp>
+.histogram {
+	border: 1px solid var(--grey-3);
+	border-radius: 8px;
+	padding: 16px 24px 24px 26px;
+}
+
+.histogram__header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.histogram__title {
+	color: var(--black);
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0;
+	opacity: 0.8;
+}
+
+.histogram__total {
+	color: var(--black);
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	margin: 0;
+	padding-bottom: 39px;
+}
+
+.histogram__link {
+	color: var(--blue);
+	text-align: right;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0;
+	padding-top: 3px;
+}
+
+.histogram__bars-container {
+	display: flex;
+	align-items: flex-end;
+	gap: 1px;
+	height: 50px;
+}
+
+.histogram__bar {
+	background: var(--primary);
+	flex-grow: 1;
+}
+									</xmp></pre>
+									</figure>
+								</div>
+							</section>
+						</div>
 					</div>
 				</div>
 			</div>

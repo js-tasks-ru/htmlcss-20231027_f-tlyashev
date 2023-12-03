@@ -21,13 +21,15 @@
 					</svg>
 				</a>
 				<div class='header__logo header__logo-svg'>
-					<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
-						<g>
-							<path d="m0 1h30v30h-30z"></path>
-							<rect height="32" rx="16" width="32" x="38"></rect>
-							<path d="m78 0 32 32h-32z"></path>
-						</g>
-					</svg>
+					<a href='/index.html'>
+						<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path d="m0 1h30v30h-30z"></path>
+								<rect height="32" rx="16" width="32" x="38"></rect>
+								<path d="m78 0 32 32h-32z"></path>
+							</g>
+						</svg>
+					</a>
 				</div>
 			</div>
 		</header>
@@ -64,13 +66,13 @@
 			<div class="container main__sections">
 				<aside class="sidebar">
 					<h4 class="sidebar__title">Components</h4>
-					<div class="sidebar__link">
-						<a href='/pages/modal.html'>Modal</a>
-						<a href='/pages/tooltip.htm' class='sidebar__link_active'>Tooltip</a>
-						<a href='/pages/avatar.html'>Avatar</a>
-						<a href='/pages/calendar.html'>Calendar</a>
-						<a href='/pages/histogram.html'>Histogram</a>
-						<a href='/pages/formgroup.html'>Custom form elements</a>
+					<div class="sidebar__menu">
+						<a class="sidebar__link" href='/pages/modal.html'>Modal</a>
+						<a class="sidebar__link sidebar__link_active" href='/pages/tooltip.htm'>Tooltip</a>
+						<a class="sidebar__link" href='/pages/avatar.html'>Avatar</a>
+						<a class="sidebar__link" href='/pages/calendar.html'>Calendar</a>
+						<a class="sidebar__link" href='/pages/histogram.html'>Histogram</a>
+						<a class="sidebar__link" href='/pages/formgroup.html'>Custom form elements</a>
 					</div>
 				</aside>
 				<div class="main__component">
@@ -87,6 +89,89 @@
 									Helper Text
 								</div>
 							</div>
+						</div>
+						<div class="tabs">
+							<input class='tabs__input' type="radio" id="html-tab" name='component-menu' checked>
+							<input class='tabs__input' type="radio" id="css-tab" name='component-menu'>
+							<div class="tabs__scroller tabs__scroller_component">
+								<label class='tabs__ladel' for="html-tab">HTML</label>
+								<label class='tabs__ladel' for="css-tab">CSS</label>
+							</div>
+							<section class='tabs__section'>
+								<div class="tabs__content tabs__content_html-code">
+									<figure>
+										<pre><xmp>
+<div class="tooltip">
+	<div class="tooltip__trigger">
+			<svg class='tooltip__icon'>
+					<use href='/assets/images/sprite.svg#help'></use>
+			</svg>
+	</div>
+	<div class="tooltip__bubble">
+			Helper Text
+	</div>
+</div>
+										</xmp></pre>
+									</figure>
+								</div>
+								<div class="tabs__content tabs__content_css-code">
+									<figure>
+										<pre><xmp>
+.tooltip {
+	display: inline-block;
+	position: relative;
+}
+
+.tooltip__icon {
+	width: 24px;
+	height: 24px;
+}
+
+.tooltip__icon:hover {
+	fill: var(--blue);
+}
+
+.tooltip__trigger:hover {
+	cursor: pointer;
+}
+
+.tooltip__bubble {
+	position: absolute;
+	display: none;
+	border-radius: 10px;
+	background: var(--blue);
+	box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+	color: var(--grey-2);
+	text-align: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 13px 21px 8px;
+	bottom: calc(100% + 10px);
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+}
+
+.tooltip__bubble::after {
+	content: '';
+	border: 10px solid transparent;
+	border-top-color: var(--blue);
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.tooltip__trigger:hover ~ .tooltip__bubble {
+	display: block;
+}
+									</xmp></pre>
+									</figure>
+								</div>
+							</section>
 						</div>
 					</div>
 				</div>

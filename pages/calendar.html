@@ -21,13 +21,15 @@
 					</svg>
 				</a>
 				<div class='header__logo header__logo-svg'>
-					<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
-						<g>
-							<path d="m0 1h30v30h-30z"></path>
-							<rect height="32" rx="16" width="32" x="38"></rect>
-							<path d="m78 0 32 32h-32z"></path>
-						</g>
-					</svg>
+					<a href='/index.html'>
+						<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path d="m0 1h30v30h-30z"></path>
+								<rect height="32" rx="16" width="32" x="38"></rect>
+								<path d="m78 0 32 32h-32z"></path>
+							</g>
+						</svg>
+					</a>
 				</div>
 			</div>
 		</header>
@@ -64,13 +66,13 @@
 			<div class="container main__sections">
 				<aside class="sidebar">
 					<h4 class="sidebar__title">Components</h4>
-					<div class="sidebar__link">
-						<a href='/pages/modal.html'>Modal</a>
-						<a href='/pages/tooltip.html'>Tooltip</a>
-						<a href='/pages/avatar.html'>Avatar</a>
-						<a href='/pages/calendar.html' class='sidebar__link_active'>Calendar</a>
-						<a href='/pages/histogram.html'>Histogram</a>
-						<a href='/pages/formgroup.html'>Custom form elements</a>
+					<div class="sidebar__menu">
+						<a class="sidebar__link" href='/pages/modal.html'>Modal</a>
+						<a class="sidebar__link" href='/pages/tooltip.html'>Tooltip</a>
+						<a class="sidebar__link" href='/pages/avatar.html'>Avatar</a>
+						<a class="sidebar__link sidebar__link_active" href='/pages/calendar.html'>Calendar</a>
+						<a class="sidebar__link" href='/pages/histogram.html'>Histogram</a>
+						<a class="sidebar__link" href='/pages/formgroup.html'>Custom form elements</a>
 					</div>
 				</aside>
 				<div class="main__component">
@@ -127,6 +129,140 @@
 									<span class="calendar__item">31</span>
 								</div>
 							</div>
+						</div>
+						<div class="tabs">
+							<input class='tabs__input' type="radio" id="html-tab" name='component-menu' checked>
+							<input class='tabs__input' type="radio" id="css-tab" name='component-menu'>
+							<div class="tabs__scroller tabs__scroller_component">
+								<label class='tabs__ladel' for="html-tab">HTML</label>
+								<label class='tabs__ladel' for="css-tab">CSS</label>
+							</div>
+							<section class='tabs__section'>
+								<div class="tabs__content tabs__content_html-code">
+									<figure>
+										<pre><xmp>
+<div class="calendar" style='max-width: 300px;'>
+	<div class="calendar__title">
+			October 2019
+	</div>
+	<div class="calendar__wrapper">
+			<div class="calendar__inner">
+					<span class="calendar__item calendar__item_days">Mon</span>
+					<span class="calendar__item calendar__item_days">Tue</span>
+					<span class="calendar__item calendar__item_days">Wed</span>
+					<span class="calendar__item calendar__item_days">Thu</span>
+					<span class="calendar__item calendar__item_days">Fri</span>
+					<span class="calendar__item calendar__item_days">Sat</span>
+					<span class="calendar__item calendar__item_days">Sun</span>
+					<span class="calendar__item"></span>
+					<span class="calendar__item"></span>
+					<span class="calendar__item"></span>
+					<span class="calendar__item"></span>
+					<span class="calendar__item"></span>
+					<span class="calendar__item">1</span>
+					<span class="calendar__item">2</span>
+					<span class="calendar__item">3</span>
+					<span class="calendar__item">4</span>
+					<span class="calendar__item">5</span>
+					<span class="calendar__item">6</span>
+					<span class="calendar__item">7</span>
+					<span class="calendar__item">8</span>
+					<span class="calendar__item">9</span>
+					<span class="calendar__item">10</span>
+					<span class="calendar__item">11</span>
+					<span class="calendar__item">12</span>
+					<span class="calendar__item">13</span>
+					<span class="calendar__item">14</span>
+					<span class="calendar__item">15</span>
+					<span class="calendar__item">16</span>
+					<span class="calendar__item">17</span>
+					<span class="calendar__item calendar__item_active">18</span>
+					<span class="calendar__item calendar__item_between">19</span>
+					<span class="calendar__item calendar__item_between">20</span>
+					<span class="calendar__item calendar__item_between">21</span>
+					<span class="calendar__item calendar__item_between">22</span>
+					<span class="calendar__item calendar__item_active">23</span>
+					<span class="calendar__item">24</span>
+					<span class="calendar__item">25</span>
+					<span class="calendar__item">26</span>
+					<span class="calendar__item">27</span>
+					<span class="calendar__item">28</span>
+					<span class="calendar__item">29</span>
+					<span class="calendar__item">30</span>
+					<span class="calendar__item">31</span>
+			</div>
+	</div>
+</div>
+										</xmp></pre>
+									</figure>
+								</div>
+								<div class="tabs__content tabs__content_css-code">
+									<figure>
+										<pre><xmp>
+.calendar {
+	border: 1px solid var(--grey-3);
+	border-radius: 8px;
+	padding: 28px 26px 32px;
+}
+
+.calendar__title {
+	color: #334D6E;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 0;
+	padding-bottom: 24px;
+	text-align: center;
+}
+
+.calendar__wrapper {
+	padding-bottom: 100%;
+	position: relative;
+}
+
+.calendar__inner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #334D6E;
+	font-family: Source Sans Pro;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: center;
+}
+
+.calendar__item_days {
+	color: #90A0B7;
+	font-family: Inter;
+	font-size: 14px;
+}
+
+.calendar__item_active {
+	background: var(--blue);
+	color: var(--white);
+}
+
+.calendar__item_between {
+	background: rgba(158, 175, 245, 0.2);
+}
+									</xmp></pre>
+									</figure>
+								</div>
+							</section>
 						</div>
 					</div>
 				</div>
