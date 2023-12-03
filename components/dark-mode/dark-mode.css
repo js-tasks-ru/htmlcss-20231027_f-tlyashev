@@ -5,7 +5,7 @@ html[data-theme-dark] {
 	--black: #ffffff75;
 }
 
-.dark-mode__changer {
+.dark-mode {
 	display: flex;
 	gap: 12px;
 }
