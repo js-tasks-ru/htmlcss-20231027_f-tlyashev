@@ -76,137 +76,140 @@
 					</div>
 				</aside>
 				<div class="main__component">
-					<div class='container__component'>
-						<h3 class='main__component-title'>Custom form elements</h3>
-						<div class='container__checkbox-set'>
-							<label class='checkbox'>
-								<input type='checkbox' class='checkbox__input'>
-								<div class='checkbox__state'>
-									<div class='checkbox__control'>
-										<svg class='checkbox__icon'>
-											<use href='/assets/images/sprite.svg#check'></use>
-										</svg>
+					<div class='main__container'>
+						<h3 class='main__title'>Custom form elements</h3>
+						<div class='main__component-box'>
+							<div class='grid-container'>
+								<label class='checkbox'>
+									<input type='checkbox' class='checkbox__input'>
+									<div class='checkbox__state'>
+										<div class='checkbox__control'>
+											<svg class='checkbox__icon'>
+												<use href='/assets/images/sprite.svg#check'></use>
+											</svg>
+										</div>
+										<div class='checkbox__title'>Default</div>
 									</div>
-									<div class='checkbox__title'>Default</div>
-								</div>
-							</label>
-							<label class='checkbox'>
-								<input type='checkbox' class='checkbox__input' checked>
-								<div class='checkbox__state'>
-									<div class='checkbox__control'>
-										<svg class='checkbox__icon'>
-											<use href='/assets/images/sprite.svg#check'></use>
-										</svg>
+								</label>
+								<label class='checkbox'>
+									<input type='checkbox' class='checkbox__input' checked>
+									<div class='checkbox__state'>
+										<div class='checkbox__control'>
+											<svg class='checkbox__icon'>
+												<use href='/assets/images/sprite.svg#check'></use>
+											</svg>
+										</div>
+										<div class='checkbox__title'>Checked</div>
 									</div>
-									<div class='checkbox__title'>Checked</div>
-								</div>
-							</label>
-							<label class='checkbox'>
-								<input type='checkbox' class='checkbox__input' disabled>
-								<div class='checkbox__state'>
-									<div class='checkbox__control'>
-										<svg class='checkbox__icon'>
-											<use href='/assets/images/sprite.svg#check'></use>
-										</svg>
+								</label>
+								<label class='checkbox'>
+									<input type='checkbox' class='checkbox__input' disabled>
+									<div class='checkbox__state'>
+										<div class='checkbox__control'>
+											<svg class='checkbox__icon'>
+												<use href='/assets/images/sprite.svg#check'></use>
+											</svg>
+										</div>
+										<div class='checkbox__title'>Disabled</div>
 									</div>
-									<div class='checkbox__title'>Disabled</div>
-								</div>
-							</label>
-							<label class='radio'>
-								<input type='radio' name='radio-name' class='radio__input'>
-								<div class='radio__state'>
-									<div class='radio__control'>
-										<div class='radio__icon'></div>
+								</label>
+								<label class='radio'>
+									<input type='radio' name='radio-name' class='radio__input'>
+									<div class='radio__state'>
+										<div class='radio__control'>
+											<div class='radio__icon'></div>
+										</div>
+										<div class='radio__title'>Default</div>
 									</div>
-									<div class='radio__title'>Default</div>
-								</div>
-							</label>
-							<label class='radio'>
-								<input type='radio' name='radio-name' class='radio__input' checked>
-								<div class='radio__state'>
-									<div class='radio__control'>
-										<div class='radio__icon'></div>
+								</label>
+								<label class='radio'>
+									<input type='radio' name='radio-name' class='radio__input' checked>
+									<div class='radio__state'>
+										<div class='radio__control'>
+											<div class='radio__icon'></div>
+										</div>
+										<div class='radio__title'>Selected</div>
 									</div>
-									<div class='radio__title'>Selected</div>
-								</div>
-							</label>
-							<label class='radio'>
-								<input type='radio' name='radio-name' class='radio__input' disabled>
-								<div class='radio__state'>
-									<div class='radio__control'>
-										<div class='radio__icon'></div>
+								</label>
+								<label class='radio'>
+									<input type='radio' name='radio-name' class='radio__input' disabled>
+									<div class='radio__state'>
+										<div class='radio__control'>
+											<div class='radio__icon'></div>
+										</div>
+										<div class='radio__title'>Disabled</div>
 									</div>
-									<div class='radio__title'>Disabled</div>
-								</div>
-							</label>
-							<label class='toggle'>
-								<input type='checkbox' class='toggle__input'>
-								<div class='toggle__state'>
-									<div class='toggle__control'>
-										<div class='toggle__icon'></div>
+								</label>
+								<label class='toggle'>
+									<input type='checkbox' class='toggle__input'>
+									<div class='toggle__state'>
+										<div class='toggle__control'>
+											<div class='toggle__icon'></div>
+										</div>
+										<div class='toggle__title'>Off</div>
 									</div>
-									<div class='toggle__title'>Off</div>
-								</div>
-							</label>
-							<label class='toggle'>
-								<input type='checkbox' class='toggle__input' checked>
-								<div class='toggle__state'>
-									<div class='toggle__control'>
-										<div class='toggle__icon'></div>
+								</label>
+								<label class='toggle'>
+									<input type='checkbox' class='toggle__input' checked>
+									<div class='toggle__state'>
+										<div class='toggle__control'>
+											<div class='toggle__icon'></div>
+										</div>
+										<div class='toggle__title'>On</div>
 									</div>
-									<div class='toggle__title'>On</div>
-								</div>
-							</label>
-							<label class='toggle'>
-								<input type='checkbox' class='toggle__input' disabled>
-								<div class='toggle__state'>
-									<div class='toggle__control'>
-										<div class='toggle__icon'></div>
+								</label>
+								<label class='toggle'>
+									<input type='checkbox' class='toggle__input' disabled>
+									<div class='toggle__state'>
+										<div class='toggle__control'>
+											<div class='toggle__icon'></div>
+										</div>
+										<div class='toggle__title'>Disabled</div>
 									</div>
-									<div class='toggle__title'>Disabled</div>
-								</div>
-							</label>
-						</div>
-						<div class='form-group'>
-							<label class='form-group__label' for='input'>Label</label>
-							<div class='form-group__control'>
-								<input class='form-group__input' type='text' id='input' placeholder='Placeholder'>
-								<svg class='form-group__icon form-group__icon_success'>
-									<use href='/assets/images/sprite.svg#success'></use>
-								</svg>
-								<svg class='form-group__icon form-group__icon_error'>
-									<use href='/assets/images/sprite.svg#error'></use>
-								</svg>
+								</label>
 							</div>
-						</div>
-						<div class='form-group form-group_success'>
-							<label class='form-group__label' for='input'>Success</label>
-							<div class='form-group__control'>
-								<input class='form-group__input' type='text' id='input' placeholder='Placeholder' value='Success'>
-								<svg class='form-group__icon form-group__icon_success'>
-									<use class='success' href='/assets/images/sprite.svg#success'></use>
-								</svg>
-								<svg class='form-group__icon form-group__icon_error'>
-									<use class='error' href='/assets/images/sprite.svg#error'></use>
-								</svg>
+
+							<div class='form-group'>
+								<label class='form-group__label' for='input'>Label</label>
+								<div class='form-group__control'>
+									<input class='form-group__input' type='text' id='input' placeholder='Placeholder'>
+									<svg class='form-group__icon form-group__icon_success'>
+										<use href='/assets/images/sprite.svg#success'></use>
+									</svg>
+									<svg class='form-group__icon form-group__icon_error'>
+										<use href='/assets/images/sprite.svg#error'></use>
+									</svg>
+								</div>
 							</div>
-						</div>
-						<div class='form-group form-group_error'>
-							<label class='form-group__label' for='input'>Error</label>
-							<div class='form-group__control'>
-								<input class='form-group__input' type='text' id='input' placeholder='Placeholder' value='Error'>
-								<svg class='form-group__icon form-group__icon_success'>
-									<use href='/assets/images/sprite.svg#success'></use>
-								</svg>
-								<svg class='form-group__icon form-group__icon_error'>
-									<use href='/assets/images/sprite.svg#error'></use>
-								</svg>
+							<div class='form-group form-group_success'>
+								<label class='form-group__label' for='input'>Success</label>
+								<div class='form-group__control'>
+									<input class='form-group__input' type='text' id='input' placeholder='Placeholder' value='Success'>
+									<svg class='form-group__icon form-group__icon_success'>
+										<use class='success' href='/assets/images/sprite.svg#success'></use>
+									</svg>
+									<svg class='form-group__icon form-group__icon_error'>
+										<use class='error' href='/assets/images/sprite.svg#error'></use>
+									</svg>
+								</div>
+							</div>
+							<div class='form-group form-group_error'>
+								<label class='form-group__label' for='input'>Error</label>
+								<div class='form-group__control'>
+									<input class='form-group__input' type='text' id='input' placeholder='Placeholder' value='Error'>
+									<svg class='form-group__icon form-group__icon_success'>
+										<use href='/assets/images/sprite.svg#success'></use>
+									</svg>
+									<svg class='form-group__icon form-group__icon_error'>
+										<use href='/assets/images/sprite.svg#error'></use>
+									</svg>
+								</div>
 							</div>
 						</div>
 						<div class="tabs">
 							<input class='tabs__input' type="radio" id="html-tab" name='component-menu' checked>
 							<input class='tabs__input' type="radio" id="css-tab" name='component-menu'>
-							<div class="tabs__scroller tabs__scroller_component">
+							<div class="tabs__scroller">
 								<label class='tabs__ladel' for="html-tab">HTML</label>
 								<label class='tabs__ladel' for="css-tab">CSS</label>
 							</div>

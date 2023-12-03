@@ -13,10 +13,6 @@
 	overflow: hidden;
 }
 
-.tabs__scroller_component {
-	padding-top: 40px;
-}
-
 .tabs__ladel {
 	color: var(--grey-3);
 	font-family: Inter;

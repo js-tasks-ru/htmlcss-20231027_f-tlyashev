@@ -76,31 +76,33 @@
 					</div>
 				</aside>
 				<div class="main__component">
-					<div class='container__component'>
-						<h3 class='main__component-title'>Avatar</h3>
-						<div class='avatar'>
-							<img src='/assets/images/avatar.png' class='avatar__img' alt='аватар'>
+					<div class='main__container'>
+						<h3 class='main__title'>Avatar</h3>
+						<div class='main__component-box'>
+							<div class='avatar'>
+								<img src='/assets/images/avatar.png' class='avatar__img' alt='аватар'>
+							</div>
 						</div>
 						<div class="tabs">
 							<input class='tabs__input' type="radio" id="html-tab" name='component-menu' checked>
 							<input class='tabs__input' type="radio" id="css-tab" name='component-menu'>
-							<div class="tabs__scroller tabs__scroller_component">
+							<div class="tabs__scroller">
 								<label class='tabs__ladel' for="html-tab">HTML</label>
 								<label class='tabs__ladel' for="css-tab">CSS</label>
 							</div>
 							<section class='tabs__section'>
 								<div class="tabs__content tabs__content_html-code">
-									<figure>
-										<pre><xmp>
-<div class='avatar'>
-	<img src='/assets/images/avatar.png' class='avatar__img' alt='аватар'>
-</div>
-										</xmp></pre>
-									</figure>
+									<pre>
+											<code class='code'>
+&lt;div class='avatar'&gt;
+	&lt;img src='/assets/images/avatar.png' class='avatar__img' alt='аватар'&gt;
+&lt;/div&gt;
+										</code>
+								</pre>
 								</div>
 								<div class="tabs__content tabs__content_css-code">
-									<figure>
-										<pre><xmp>
+									<pre>
+										<code class='code'>
 .avatar {
 	width: 102px;
 	height: 102px;
@@ -112,18 +114,19 @@
 	object-fit: cover;
 	border-radius: 100%;
 }
-									</xmp></pre>
-									</figure>
+									</code>
+								</pre>
 								</div>
 							</section>
 						</div>
 					</div>
 				</div>
 			</div>
-		</main>
-		<footer class="footer footer_template">
-			<h5 class="footer_template footer__title">Reusable component library</h5>
-		</footer>
+	</div>
+	</main>
+	<footer class="footer footer_template">
+		<h5 class="footer_template footer__title">Reusable component library</h5>
+	</footer>
 	</div>
 </body>
 

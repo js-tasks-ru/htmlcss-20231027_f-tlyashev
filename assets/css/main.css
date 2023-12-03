@@ -19,6 +19,8 @@
 @import '../../07-lection5/04-input/input.css';
 @import '../../components/dark-mode/dark-mode.css';
 @import '../../07-lection5/03-toggler/toggler.css';
+@import '../../components/grid-container/grid-container.css';
+@import '../../components/code/code.css';
 @import "normalize.css";
 
 :root {

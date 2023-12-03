@@ -76,27 +76,29 @@
 					</div>
 				</aside>
 				<div class="main__component">
-					<div class='container__component'>
-						<h3 class='main__component-title'>Modal</h3>
-						<button id="modal-open" class="button button_primary">Open modal</button>
-						<div id="modal" class="modal">
-							<div class="modal__window">
-								<a id="modal-close">
-									<svg class="modal__close-icon">
-										<use href='/assets/images/sprite.svg#cross'></use>
-									</svg>
-								</a>
-								<p class="modal__title">Modal title</p>
-								<p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-									officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-									Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-									duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+					<div class='main__container'>
+						<h3 class='main__title'>Modal</h3>
+						<div class='main__component-box'>
+							<button id="modal-open" class="button button_primary">Open modal</button>
+							<div id="modal" class="modal">
+								<div class="modal__window">
+									<a id="modal-close">
+										<svg class="modal__close-icon">
+											<use href='/assets/images/sprite.svg#cross'></use>
+										</svg>
+									</a>
+									<p class="modal__title">Modal title</p>
+									<p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+										officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet
+										minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+										enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+								</div>
 							</div>
 						</div>
 						<div class="tabs">
 							<input class='tabs__input' type="radio" id="html-tab" name='component-menu' checked>
 							<input class='tabs__input' type="radio" id="css-tab" name='component-menu'>
-							<div class="tabs__scroller tabs__scroller_component">
+							<div class="tabs__scroller">
 								<label class='tabs__ladel' for="html-tab">HTML</label>
 								<label class='tabs__ladel' for="css-tab">CSS</label>
 							</div>

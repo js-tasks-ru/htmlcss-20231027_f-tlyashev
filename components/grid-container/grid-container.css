@@ -1,0 +1,15 @@
+.grid-container {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 16px;
+	padding-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+	.grid-container {
+			grid-template-columns: repeat(1, 1fr);
+			grid-auto-flow: row;
+	}
+}
