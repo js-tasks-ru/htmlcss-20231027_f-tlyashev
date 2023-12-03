@@ -17,7 +17,7 @@
 .checkbox__control {
 	width: 28px;
 	height: 28px;
-	border: 1px solid #DDE2E5;
+	border: 1px solid var(--grey-2);
 	border-radius: 4px;
 	cursor: pointer;
 	display: flex;
@@ -34,10 +34,20 @@
 	line-height: 24px;
 }
 
+@keyframes check {
+	0% {
+		box-shadow: 0 0 0 0 var(--grey-3);
+	}
+	100% {
+		box-shadow: 0 0 0 12px rgba(14, 79, 211, 0);
+	}
+}
+
 .checkbox__input:checked ~ .checkbox__state 
 .checkbox__control {
 	border-color: var(--blue);
 	background: var(--blue);
+	animation: check 0.5s;
 }
 
 .checkbox__input:focus ~ .checkbox__state 

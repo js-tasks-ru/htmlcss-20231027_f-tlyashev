@@ -1,5 +1,5 @@
 .main {
-	background: #F9FAFC;
+	background: var(--background-color);
 }
 
 .main__sections {
@@ -12,7 +12,7 @@
 
 .main__component {
 	border-radius: 12px;
-  background: var(--white);
+  background: var(--bg-component);
   box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
 }
 

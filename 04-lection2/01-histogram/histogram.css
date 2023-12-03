@@ -48,9 +48,21 @@
     align-items: flex-end;
     gap: 1px;
     height: 50px;
+    animation: bar-load 300ms;
 }
 
 .histogram__bar {
     background: var(--primary);
     flex-grow: 1;
+}
+
+@keyframes bar-load {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
 }

@@ -8,7 +8,6 @@
 @import '../../components/footer/footer.css';
 @import '../../components/container/container.css';
 @import '../../05-lection3/01-tooltip/tooltip.css';
-@import '../../07-lection5/03-toggler/toggler.css';
 @import '../../05-lection3/02-modal/modal.css';
 @import '../../03-lection1/01-button/button.css';
 @import '../../09-lection7/01-burger-menu/mobile-menu.css';
@@ -17,8 +16,9 @@
 @import '../../04-lection2/01-histogram/histogram.css';
 @import '../../07-lection5/01-checkbox/checkbox.css';
 @import '../../07-lection5/02-radio/radio.css';
-@import '../../07-lection5/03-toggler/toggler.css';
 @import '../../07-lection5/04-input/input.css';
+@import '../../components/dark-mode/dark-mode.css';
+@import '../../07-lection5/03-toggler/toggler.css';
 @import "normalize.css";
 
 :root {
@@ -33,6 +33,9 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --notification: #D84910;
+    --background-color: #F9FAFC;
+    --font-color: #212429;
+    --bg-component: #ffffff;
 
     --error: var(--red);
     --success: var(--blue);

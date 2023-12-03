@@ -1,11 +1,11 @@
 .header {
-    background: var(--white);
+    background: var(--background-color);
     padding: 24px 0 38px;
 }
 
 .header_template {
-    padding: 16px 0;
-    background: #F9FAFC;
+    padding: 24px 0;
+    background: var(--background-color);
 }
 
 .header__menu-icon {
@@ -30,7 +30,7 @@
 }
 
 .header__title {
-    color: var(--black);
+    color: var(--font-color);
     font-family: Inter, serif;
     font-size: 50px;
     font-style: normal;

@@ -1,9 +1,9 @@
 .footer {
-    background: var(--white);
+    background: var(--background-color);
 }
 
 .footer_template {
-    background: #F9FAFC;
+    background: var(--background-color);
 }
 
 .footer__title {
