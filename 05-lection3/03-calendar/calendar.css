@@ -27,7 +27,7 @@
 }
 
 .calendar__title {
-	color: #334D6E;
+	color: var(--blue-2);
 	font-family: Inter;
 	font-size: 20px;
 	font-style: normal;
@@ -38,9 +38,8 @@
 	text-align: center;
 }
 
-.calendar__title_preview {
+.calendar_preview .calendar__title {
 	font-size: 14px;
-	padding-bottom: 5px;
 }
 
 .calendar__wrapper {
@@ -63,7 +62,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #334D6E;
+	color: var(--blue-2);
 	font-family: Source Sans Pro;
 	font-size: 16px;
 	font-style: normal;

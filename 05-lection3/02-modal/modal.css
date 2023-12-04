@@ -23,7 +23,7 @@
 
 .modal__window {
 	border-radius: 8px;
-	background: var(--white);
+	background: var(--main-background-color);
 	width: 428px;
 	height: 294px;
 	padding: 30px 40px 33px;
@@ -34,7 +34,7 @@
 }
 
 .modal__title {
-	color: #334D6E;
+	color: var(--blue-2);
 	font-family: Inter;
 	font-size: 20px;
 	font-style: normal;
@@ -52,4 +52,24 @@
 	font-weight: 400;
 	line-height: 24px;
 	margin: 0;
+}
+
+.modal__window_preview {
+	position: relative;
+	transform: none;
+	max-width: 200px;
+	max-height: 200px;
+	top: 0;
+	left: 0;
+	border: 1px solid var(--grey-3);
+	pointer-events: none;
+	padding: 14px;
+}
+
+.modal__window_preview .modal__title {
+	font-size: 16px;
+}
+
+.modal__window_preview .modal__text {
+	font-size: 14px;
 }

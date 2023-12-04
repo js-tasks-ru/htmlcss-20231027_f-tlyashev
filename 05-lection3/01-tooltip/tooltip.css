@@ -6,6 +6,7 @@
 .tooltip__icon {
 	width: 24px;
 	height: 24px;
+	fill: var(--black);
 }
 
 .tooltip__icon:hover {
