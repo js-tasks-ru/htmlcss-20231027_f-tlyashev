@@ -17,6 +17,19 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    text-decoration: none;
+}
+
+.preview__card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.preview__card-footer {
+    margin-top: 38px;
 }
 
 .preview__card-title {
