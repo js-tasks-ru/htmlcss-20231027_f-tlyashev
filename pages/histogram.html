@@ -7,6 +7,7 @@
 	<title>Component Histogram</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script defer src="/09-lection7/01-burger-menu/mobile-menu.js"></script>
+	<script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
 </head>
 
 <body>
@@ -30,6 +31,22 @@
 							</g>
 						</svg>
 					</a>
+				</div>
+				<div class='dark-mode'>
+					<svg class='dark-mode__icon-light'>
+						<use href='/assets/images/sprite.svg#sun'></use>
+					</svg>
+					<label class='toggle'>
+						<input type='checkbox' class='toggle__input' id="theme-changer">
+						<div class='toggle__state'>
+							<div class='toggle__control'>
+								<div class='toggle__icon'></div>
+							</div>
+						</div>
+					</label>
+					<svg class='dark-mode__icon-dark'>
+						<use href='/assets/images/sprite.svg#moon'></use>
+					</svg>
 				</div>
 			</div>
 		</header>
@@ -118,43 +135,43 @@
 							</div>
 							<section class='tabs__section'>
 								<div class="tabs__content tabs__content_html-code">
-									<figure>
-										<pre><xmp>
-<section class="histogram">
-	<div class="histogram__header">
-			<p class="histogram__title">Total orders</p>
-			<a class="histogram__link">View all</a>
-	</div>
-			<h4 class="histogram__total">50254</h4>
-	<div class="histogram__bars-container">
-			<div class="histogram__bar" style="height: 95%"></div>
-			<div class="histogram__bar" style="height: 75%"></div>
-			<div class="histogram__bar" style="height: 26%"></div>
-			<div class="histogram__bar" style="height: 15%"></div>
-			<div class="histogram__bar" style="height: 80%"></div>
-			<div class="histogram__bar" style="height: 35%"></div>
-			<div class="histogram__bar" style="height: 46%"></div>
-			<div class="histogram__bar" style="height: 55%"></div>
-			<div class="histogram__bar" style="height: 99%"></div>
-			<div class="histogram__bar" style="height: 19%"></div>
-			<div class="histogram__bar" style="height: 56%"></div>
-			<div class="histogram__bar" style="height: 32%"></div>
-			<div class="histogram__bar" style="height: 25%"></div>
-			<div class="histogram__bar" style="height: 65%"></div>
-			<div class="histogram__bar" style="height: 79%"></div>
-			<div class="histogram__bar" style="height: 15%"></div>
-			<div class="histogram__bar" style="height: 88%"></div>
-			<div class="histogram__bar" style="height: 65%"></div>
-			<div class="histogram__bar" style="height: 44%"></div>
-			<div class="histogram__bar" style="height: 95%"></div>
-	</div>
-</section>
-										</xmp></pre>
-									</figure>
+									<pre>
+										<code class='code'>
+&lt;section class="histogram"&gt;
+&lt;div class="histogram__header"&gt;
+		&lt;p class="histogram__title"&gt;Total orders&lt;/p&gt;
+		&lt;a class="histogram__link"&gt;View all&lt;/a&gt;
+&lt;/div&gt;
+		&lt;h4 class="histogram__total"&gt;50254&lt;/h4&gt;
+&lt;div class="histogram__bars-container"&gt;
+		&lt;div class="histogram__bar" style="height: 95%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 75%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 26%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 15%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 80%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 35%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 46%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 55%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 99%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 19%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 56%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 32%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 25%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 65%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 79%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 15%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 88%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 65%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 44%"&gt;&lt;/div&gt;
+		&lt;div class="histogram__bar" style="height: 95%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+										</code>
+									</pre>
 								</div>
 								<div class="tabs__content tabs__content_css-code">
-									<figure>
-										<pre><xmp>
+									<pre>
+										<code class='code'>
 .histogram {
 	border: 1px solid var(--grey-3);
 	border-radius: 8px;
@@ -211,8 +228,8 @@
 	background: var(--primary);
 	flex-grow: 1;
 }
-									</xmp></pre>
-									</figure>
+									</code>
+									</pre>
 								</div>
 							</section>
 						</div>

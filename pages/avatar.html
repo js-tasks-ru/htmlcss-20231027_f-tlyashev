@@ -7,6 +7,7 @@
 	<title>Component Avatar</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script defer src="/09-lection7/01-burger-menu/mobile-menu.js"></script>
+	<script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
 </head>
 
 <body>
@@ -30,6 +31,22 @@
 							</g>
 						</svg>
 					</a>
+				</div>
+				<div class='dark-mode'>
+					<svg class='dark-mode__icon-light'>
+						<use href='/assets/images/sprite.svg#sun'></use>
+					</svg>
+					<label class='toggle'>
+						<input type='checkbox' class='toggle__input' id="theme-changer">
+						<div class='toggle__state'>
+							<div class='toggle__control'>
+								<div class='toggle__icon'></div>
+							</div>
+						</div>
+					</label>
+					<svg class='dark-mode__icon-dark'>
+						<use href='/assets/images/sprite.svg#moon'></use>
+					</svg>
 				</div>
 			</div>
 		</header>

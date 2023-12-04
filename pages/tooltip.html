@@ -7,6 +7,7 @@
 	<title>Component Tooltip</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script defer src="/09-lection7/01-burger-menu/mobile-menu.js"></script>
+	<script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
 </head>
 
 <body>
@@ -30,6 +31,22 @@
 							</g>
 						</svg>
 					</a>
+				</div>
+				<div class='dark-mode'>
+					<svg class='dark-mode__icon-light'>
+						<use href='/assets/images/sprite.svg#sun'></use>
+					</svg>
+					<label class='toggle'>
+						<input type='checkbox' class='toggle__input' id="theme-changer">
+						<div class='toggle__state'>
+							<div class='toggle__control'>
+								<div class='toggle__icon'></div>
+							</div>
+						</div>
+					</label>
+					<svg class='dark-mode__icon-dark'>
+						<use href='/assets/images/sprite.svg#moon'></use>
+					</svg>
 				</div>
 			</div>
 		</header>
@@ -101,24 +118,24 @@
 							</div>
 							<section class='tabs__section'>
 								<div class="tabs__content tabs__content_html-code">
-									<figure>
-										<pre><xmp>
-<div class="tooltip">
-	<div class="tooltip__trigger">
-			<svg class='tooltip__icon'>
-					<use href='/assets/images/sprite.svg#help'></use>
-			</svg>
-	</div>
-	<div class="tooltip__bubble">
+									<pre>
+										<code class='code'>
+&lt;div class="tooltip"&gt;
+	&lt;div class="tooltip__trigger"&gt;
+			&lt;svg class='tooltip__icon'&gt;
+					&lt;use href='/assets/images/sprite.svg#help'&gt;&lt;/use&gt;
+			&lt;/svg&gt;
+	&lt;/div&gt;
+	&lt;div class="tooltip__bubble"&gt;
 			Helper Text
-	</div>
-</div>
-										</xmp></pre>
-									</figure>
+	&lt;/div&gt;
+&lt;/div&gt;
+									</code>
+									</pre>
 								</div>
 								<div class="tabs__content tabs__content_css-code">
-									<figure>
-										<pre><xmp>
+									<pre>
+										<code class='code'>
 .tooltip {
 	display: inline-block;
 	position: relative;
@@ -170,8 +187,8 @@
 .tooltip__trigger:hover ~ .tooltip__bubble {
 	display: block;
 }
-									</xmp></pre>
-									</figure>
+									</code>
+									</pre>
 								</div>
 							</section>
 						</div>

@@ -7,6 +7,7 @@
 	<title>Component Modal</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script defer src="/09-lection7/01-burger-menu/mobile-menu.js"></script>
+	<script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
 </head>
 
 <body>
@@ -30,6 +31,22 @@
 							</g>
 						</svg>
 					</a>
+				</div>
+				<div class='dark-mode'>
+					<svg class='dark-mode__icon-light'>
+						<use href='/assets/images/sprite.svg#sun'></use>
+					</svg>
+					<label class='toggle'>
+						<input type='checkbox' class='toggle__input' id="theme-changer">
+						<div class='toggle__state'>
+							<div class='toggle__control'>
+								<div class='toggle__icon'></div>
+							</div>
+						</div>
+					</label>
+					<svg class='dark-mode__icon-dark'>
+						<use href='/assets/images/sprite.svg#moon'></use>
+					</svg>
 				</div>
 			</div>
 		</header>
@@ -104,26 +121,26 @@
 							</div>
 							<section class='tabs__section'>
 								<div class="tabs__content tabs__content_html-code">
-									<figure>
-										<pre><xmp>
-<div id="modal" class="modal">
-		<div class="modal__window">
-			<a id="modal-close">
-				<svg class="modal__close-icon">
-					<use href='/assets/images/sprite.svg#cross'></use>
-				</svg>
-			</a>
-			<p class="modal__title">Modal title</p>
-			<p class="modal__text">Modal text</p>
-		</div>
-</div>
-<button id="modal-open" class="button button_primary">Open modal</button>
-										</xmp></pre>
-									</figure>
+									<pre>
+										<code class='code'>
+&lt;div id="modal" class="modal"&gt;
+&lt;div class="modal__window"&gt;
+	&lt;a id="modal-close"&gt;
+		&lt;svg class="modal__close-icon"&gt;
+			&lt;use href='/assets/images/sprite.svg#cross'&gt;&lt;/use&gt;
+		&lt;/svg&gt;
+	&lt;/a&gt;
+	&lt;p class="modal__title"&gt;Modal title&lt;/p&gt;
+	&lt;p class="modal__text"&gt;Modal text&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;button id="modal-open" class="button button_primary"&gt;Open modal&lt;/button&gt;									
+									</code>
+									</pre>
 								</div>
 								<div class="tabs__content tabs__content_css-code">
-									<figure>
-										<pre><xmp>
+									<pre>
+										<code class='code'>
 .modal {
 	position: fixed;
 	top: 0;
@@ -179,8 +196,8 @@
 	line-height: 24px;
 	margin: 0;
 }
-									</xmp></pre>
-									</figure>
+									</code>
+									</pre>
 								</div>
 							</section>
 						</div>
