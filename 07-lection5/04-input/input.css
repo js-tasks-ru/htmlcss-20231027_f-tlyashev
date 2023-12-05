@@ -23,9 +23,9 @@
 	padding: 17px 48px 13px 24px;
 	border: 1px solid var(--grey-2);
 	border-radius: 8px;
-	background-color: var(--white);
+	background-color: var(--bg-component);
 	outline: none;
-	color: var(--grey-4);
+	color: var(--font-color);
 	font-family: Inter;
 	font-size: 20px;
 	font-style: normal;
