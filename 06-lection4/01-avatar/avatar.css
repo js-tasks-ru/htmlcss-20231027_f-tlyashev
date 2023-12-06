@@ -9,3 +9,8 @@
 	object-fit: cover;
 	border-radius: 100%;
 }
+
+.avatar_preview {
+	width: 175px;
+	height: 175px;
+}
