@@ -10,25 +10,26 @@
 	cursor: default
 }
 
-.sidebar__link {
+.sidebar__menu {
 	display: flex;
 	flex-direction: column;
 	row-gap: 4px;
 }
 
-.sidebar__link a {
+.sidebar__link {
 	color: var(--font-color);
 	font-size: 14px;
 	line-height: 22px;
 	text-decoration: none;
 }
 
-.sidebar__link a:hover {
+.sidebar__link:hover {
 	cursor: pointer;
 	color: var(--grey-3);
 }
 
-.sidebar__link a:active {
+.sidebar__link:active,
+.sidebar__link_active {
 	color: var(--notification);
 }
 

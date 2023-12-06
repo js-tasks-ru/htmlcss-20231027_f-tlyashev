@@ -7,6 +7,7 @@
 	left: 0;
 	transform: translateX(-100vw);
 	transition: transform 0.6s cubic-bezier(0.37, 0, 0.63, 1);
+	z-index: 2;
 }
 
 .mobile-menu[data-open] {
@@ -71,6 +72,7 @@
 	text-decoration: none;
 }
 
+.mobile-menu__link_active,
 .mobile-menu__link:active {
 	color: var(--notification);
 }

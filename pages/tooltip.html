@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+
+<head>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<title>Component Tooltip</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script defer src="/09-lection7/01-burger-menu/mobile-menu.js"></script>
+	<script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
+</head>
+
+<body>
+	<div class="page">
+		<header class="header header_template">
+			<div class='header__inner container'>
+				<a class="header__menu-icon" id='mobile-menu-open'>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</a>
+				<div class='header__logo header__logo-svg'>
+					<a href='/index.html'>
+						<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path d="m0 1h30v30h-30z"></path>
+								<rect height="32" rx="16" width="32" x="38"></rect>
+								<path d="m78 0 32 32h-32z"></path>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<div class='dark-mode'>
+					<svg class='dark-mode__icon-light'>
+						<use href='/assets/images/sprite.svg#sun'></use>
+					</svg>
+					<label class='toggle'>
+						<input type='checkbox' class='toggle__input' id="theme-changer">
+						<div class='toggle__state'>
+							<div class='toggle__control'>
+								<div class='toggle__icon'></div>
+							</div>
+						</div>
+					</label>
+					<svg class='dark-mode__icon-dark'>
+						<use href='/assets/images/sprite.svg#moon'></use>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class='mobile-menu' id='mobile-menu'>
+				<div class="mobile-menu__modal">
+					<div class='mobile-menu__header'>
+						<div class='mobile-menu__control' id='mobile-menu-close'>
+							<svg class='mobile-menu__icon-close'>
+								<use href='/assets/images/sprite.svg#close'></use>
+							</svg>
+						</div>
+						<a href='#'>
+							<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+								<g>
+									<path d="m0 1h30v30h-30z"></path>
+									<rect height="32" rx="16" width="32" x="38"></rect>
+									<path d="m78 0 32 32h-32z"></path>
+								</g>
+							</svg>
+						</a>
+					</div>
+					<div class='mobile-menu__sections'>
+						<h4 class='mobile-menu__title'>Elements</h4>
+						<a href='/pages/modal.html' class='mobile-menu__link'>Modal</a>
+						<a href='/pages/tooltip.html' class='mobile-menu__link mobile-menu__link_active'>Tooltip</a>
+						<a href="/pages/avatar.html" class='mobile-menu__link'>Avatar</a>
+						<a href="/pages/calendar.html" class='mobile-menu__link'>Calendar</a>
+						<a href="/pages/histogram.html" class='mobile-menu__link'>Histogram</a>
+						<a href="/pages/formgroup.html" class='mobile-menu__link'>Custom form elements</a>
+					</div>
+				</div>
+			</div>
+			<div class="container main__sections">
+				<aside class="sidebar">
+					<h4 class="sidebar__title">Components</h4>
+					<div class="sidebar__menu">
+						<a class="sidebar__link" href='/pages/modal.html'>Modal</a>
+						<a class="sidebar__link sidebar__link_active" href='/pages/tooltip.htm'>Tooltip</a>
+						<a class="sidebar__link" href='/pages/avatar.html'>Avatar</a>
+						<a class="sidebar__link" href='/pages/calendar.html'>Calendar</a>
+						<a class="sidebar__link" href='/pages/histogram.html'>Histogram</a>
+						<a class="sidebar__link" href='/pages/formgroup.html'>Custom form elements</a>
+					</div>
+				</aside>
+				<div class="main__component">
+					<div class='main__container'>
+						<h3 class='main__title'>Tooltip</h3>
+						<div class='main__component-box'>
+							<div class='container__tooltip'>
+								<div class="tooltip">
+									<div class="tooltip__trigger">
+										<svg class='tooltip__icon'>
+											<use href='/assets/images/sprite.svg#help'></use>
+										</svg>
+									</div>
+									<div class="tooltip__bubble">
+										Helper Text
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs">
+							<input class='tabs__input' type="radio" id="html-tab" name='component-menu' checked>
+							<input class='tabs__input' type="radio" id="css-tab" name='component-menu'>
+							<div class="tabs__scroller">
+								<label class='tabs__ladel' for="html-tab">HTML</label>
+								<label class='tabs__ladel' for="css-tab">CSS</label>
+							</div>
+							<section class='tabs__section'>
+								<div class="tabs__content tabs__content_html-code">
+									<pre>
+										<code class='code'>
+&lt;div class="tooltip"&gt;
+	&lt;div class="tooltip__trigger"&gt;
+			&lt;svg class='tooltip__icon'&gt;
+					&lt;use href='/assets/images/sprite.svg#help'&gt;&lt;/use&gt;
+			&lt;/svg&gt;
+	&lt;/div&gt;
+	&lt;div class="tooltip__bubble"&gt;
+			Helper Text
+	&lt;/div&gt;
+&lt;/div&gt;
+									</code>
+									</pre>
+								</div>
+								<div class="tabs__content tabs__content_css-code">
+									<pre>
+										<code class='code'>
+.tooltip {
+	display: inline-block;
+	position: relative;
+}
+
+.tooltip__icon {
+	width: 24px;
+	height: 24px;
+}
+
+.tooltip__icon:hover {
+	fill: var(--blue);
+}
+
+.tooltip__trigger:hover {
+	cursor: pointer;
+}
+
+.tooltip__bubble {
+	position: absolute;
+	display: none;
+	border-radius: 10px;
+	background: var(--blue);
+	box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+	color: var(--grey-2);
+	text-align: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 13px 21px 8px;
+	bottom: calc(100% + 10px);
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+}
+
+.tooltip__bubble::after {
+	content: '';
+	border: 10px solid transparent;
+	border-top-color: var(--blue);
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.tooltip__trigger:hover ~ .tooltip__bubble {
+	display: block;
+}
+									</code>
+									</pre>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer footer_template">
+			<h5 class="footer_template footer__title">Reusable component library</h5>
+		</footer>
+	</div>
+</body>
+
+</html>

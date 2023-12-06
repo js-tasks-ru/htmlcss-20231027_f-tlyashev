@@ -4,7 +4,7 @@
 
 <head>
 	<link rel="stylesheet" href="../assets/css/main.css">
-	<title></title>
+	<title>Component Avatar</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script defer src="/09-lection7/01-burger-menu/mobile-menu.js"></script>
 	<script defer src="/10-lection8/01-theme-changer/theme-changer.js"></script>
@@ -22,13 +22,15 @@
 					</svg>
 				</a>
 				<div class='header__logo header__logo-svg'>
-					<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
-						<g>
-							<path d="m0 1h30v30h-30z"></path>
-							<rect height="32" rx="16" width="32" x="38"></rect>
-							<path d="m78 0 32 32h-32z"></path>
-						</g>
-					</svg>
+					<a href='/index.html'>
+						<svg fill="" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path d="m0 1h30v30h-30z"></path>
+								<rect height="32" rx="16" width="32" x="38"></rect>
+								<path d="m78 0 32 32h-32z"></path>
+							</g>
+						</svg>
+					</a>
 				</div>
 				<div class='dark-mode'>
 					<svg class='dark-mode__icon-light'>
@@ -69,12 +71,12 @@
 					</div>
 					<div class='mobile-menu__sections'>
 						<h4 class='mobile-menu__title'>Elements</h4>
-						<a href='#' class='mobile-menu__link'>Modal</a>
-						<a href='#' class='mobile-menu__link mobile-menu__link_active'>Tooltip</a>
-						<a href="#" class='mobile-menu__link'>Avatar</a>
-						<a href="#" class='mobile-menu__link'>Calendar</a>
-						<a href="#" class='mobile-menu__link'>Histogram</a>
-						<a href="#" class='mobile-menu__link'>Custom form elements</a>
+						<a href='/pages/modal.html' class='mobile-menu__link'>Modal</a>
+						<a href='/pages/tooltip.html' class='mobile-menu__link'>Tooltip</a>
+						<a href="/pages/avatar.html" class='mobile-menu__link mobile-menu__link_active'>Avatar</a>
+						<a href="/pages/calendar.html" class='mobile-menu__link'>Calendar</a>
+						<a href="/pages/histogram.html" class='mobile-menu__link'>Histogram</a>
+						<a href="/pages/formgroup.html" class='mobile-menu__link'>Custom form elements</a>
 					</div>
 				</div>
 			</div>
@@ -91,16 +93,57 @@
 					</div>
 				</aside>
 				<div class="main__component">
-					<div class='container__component'>
+					<div class='main__container'>
+						<h3 class='main__title'>Avatar</h3>
+						<div class='main__component-box'>
+							<div class='avatar'>
+								<img src='/assets/images/avatar.png' class='avatar__img' alt='аватар'>
+							</div>
+						</div>
+						<div class="tabs">
+							<input class='tabs__input' type="radio" id="html-tab" name='component-menu' checked>
+							<input class='tabs__input' type="radio" id="css-tab" name='component-menu'>
+							<div class="tabs__scroller">
+								<label class='tabs__ladel' for="html-tab">HTML</label>
+								<label class='tabs__ladel' for="css-tab">CSS</label>
+							</div>
+							<section class='tabs__section'>
+								<div class="tabs__content tabs__content_html-code">
+									<pre>
+											<code class='code'>
+&lt;div class='avatar'&gt;
+	&lt;img src='/assets/images/avatar.png' class='avatar__img' alt='аватар'&gt;
+&lt;/div&gt;
+										</code>
+								</pre>
+								</div>
+								<div class="tabs__content tabs__content_css-code">
+									<pre>
+										<code class='code'>
+.avatar {
+	width: 102px;
+	height: 102px;
+}
 
+.avatar__img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 100%;
+}
+									</code>
+								</pre>
+								</div>
+							</section>
+						</div>
 					</div>
 				</div>
 			</div>
-		</main>
-		<footer class="footer footer_template">
-			<h5 class="footer_template footer__title">Reusable component library</h5>
-
-		</footer>
+	</div>
+	</main>
+	<footer class="footer footer_template">
+		<h5 class="footer_template footer__title">Reusable component library</h5>
+	</footer>
 	</div>
 </body>
 
