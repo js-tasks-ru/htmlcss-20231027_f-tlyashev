@@ -12,6 +12,7 @@
 .checkbox__icon {
 	width: 15px;
 	height: 13px;
+	stroke: var(--white);
 }
 
 .checkbox__control {
@@ -23,6 +24,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: var(--white);
 }
 
 .checkbox__title {
@@ -58,7 +60,7 @@
 .checkbox__input:disabled ~ .checkbox__state 
 .checkbox__control {
 	border-color: var(--grey-2);
-	background: var(--grey-2);
+	background: var(--grey-3);
 	cursor: not-allowed;
 }
 

@@ -1,6 +1,6 @@
 .preview {
     background: var(--background-color);
-    padding: 68px 0 204px;
+    padding: 68px 0 68px;
 }
 
 .preview__card-grid {

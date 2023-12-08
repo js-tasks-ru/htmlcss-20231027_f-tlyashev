@@ -41,6 +41,7 @@
     --main-background-color: #ffffff;
     --font-color: #212429;
     --bg-component: #ffffff;
+    --placeholder-color: #DDE2E5;
 
     --error: var(--red);
     --success: var(--blue);
@@ -56,6 +57,7 @@ html[data-theme-dark] {
 	--bg-component: #212429;
 	--black: #ffffff75;
 	--blue-2: var(--blue);
+    --placeholder-color: #ffffff1e;
 }
 
 * {
