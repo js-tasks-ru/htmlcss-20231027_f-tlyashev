@@ -26,7 +26,7 @@
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     background-position: -50%;
-    background: linear-gradient(93deg, #DDE2E5 6.44%, #363636 38.47%, #e7e7e7 56.48%, #313131 77.5%, #DDE2E5 102.52%);
+    background: linear-gradient(93deg, #DDE2E5 6.44%, #bdbdbd 38.47%, #DDE2E5 56.48%, #d1d1d1 77.5%, #DDE2E5 102.52%);
     background-size: 200%;
 }
 
