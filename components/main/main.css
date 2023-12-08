@@ -32,6 +32,12 @@
 	margin: 0;
 }
 
+.main__title_component {
+	margin: 25px 0;
+	text-transform: uppercase;
+	color: var(--grey-3);
+}
+
 .main__component-box {
 	padding: 24px 0 32px;
 }

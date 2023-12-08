@@ -10,6 +10,12 @@
     grid-gap: 30px;
 }
 
+.preview__card-grid_1row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
 .preview__card {
     border-radius: 12px;
     background: var(--bg-component);

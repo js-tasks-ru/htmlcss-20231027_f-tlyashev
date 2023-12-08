@@ -55,12 +55,10 @@
             <input class='tabs__input' type="radio" id="all-tab" name='main-menu' checked>
             <input class='tabs__input' type="radio" id="elements-tab" name='main-menu'>
             <input class='tabs__input' type="radio" id="containers-tab" name='main-menu'>
-            <!-- <input class='tabs__input' type="radio" id="templates-tab" name='main-menu'> -->
             <div class="container tabs__scroller">
                 <label class='tabs__ladel' for="all-tab">All components</label>
                 <label class='tabs__ladel' for="elements-tab">Elements</label>
                 <label class='tabs__ladel' for="containers-tab">Containers</label>
-                <!-- <label class='tabs__ladel' for="templates-tab">Templates</label> -->
             </div>
             <section class='tabs__section'>
                 <div class="tabs__content tabs__content_all-tab">
@@ -266,7 +264,7 @@
                 </div>
                 <div class="tabs__content tabs__content_elements">
                     <div class="preview">
-                        <div class="container preview__card-grid">
+                        <div class="container preview__card-grid_1row">
                             <a class="preview__card" href='/pages/avatar.html'>
                                 <div class='preview__card-body'>
                                     <div class='avatar avatar_preview'>
@@ -366,12 +364,116 @@
                                     <p class="preview__card-text">Element</p>
                                 </div>
                             </a>
+
+                        </div>
+                        <div class='container'>
+                            <h2 class='main__title main__title_component'>Buttons</h2>
+                            <div class='grid-container grid-container_2rows'>
+                                <button class="button button_primary">Primary</button>
+                                <button class="button button_primary" disabled>Primary</button>
+                                <button class="button button_secondary">Secondary</button>
+                                <button class="button button_secondary" disabled>Secondary</button>
+                                <button class="button button_alternate">Alternate</button>
+                                <button class="button button_alternate" disabled>Alternate</button>
+                            </div>
+                        </div>
+                        <div class='container'>
+                            <h2 class='main__title main__title_component'>Custom for elements</h2>
+                            <div class='grid-container'>
+                                <label class='checkbox'>
+                                    <input type='checkbox' class='checkbox__input'>
+                                    <div class='checkbox__state'>
+                                        <div class='checkbox__control'>
+                                            <svg class='checkbox__icon'>
+                                                <use href='/assets/images/sprite.svg#check'></use>
+                                            </svg>
+                                        </div>
+                                        <div class='checkbox__title'>Default</div>
+                                    </div>
+                                </label>
+                                <label class='checkbox'>
+                                    <input type='checkbox' class='checkbox__input' checked>
+                                    <div class='checkbox__state'>
+                                        <div class='checkbox__control'>
+                                            <svg class='checkbox__icon'>
+                                                <use href='/assets/images/sprite.svg#check'></use>
+                                            </svg>
+                                        </div>
+                                        <div class='checkbox__title'>Checked</div>
+                                    </div>
+                                </label>
+                                <label class='checkbox'>
+                                    <input type='checkbox' class='checkbox__input' disabled>
+                                    <div class='checkbox__state'>
+                                        <div class='checkbox__control'>
+                                            <svg class='checkbox__icon'>
+                                                <use href='/assets/images/sprite.svg#check'></use>
+                                            </svg>
+                                        </div>
+                                        <div class='checkbox__title'>Disabled</div>
+                                    </div>
+                                </label>
+                                <label class='radio'>
+                                    <input type='radio' name='radio-name' class='radio__input'>
+                                    <div class='radio__state'>
+                                        <div class='radio__control'>
+                                            <div class='radio__icon'></div>
+                                        </div>
+                                        <div class='radio__title'>Default</div>
+                                    </div>
+                                </label>
+                                <label class='radio'>
+                                    <input type='radio' name='radio-name' class='radio__input' checked>
+                                    <div class='radio__state'>
+                                        <div class='radio__control'>
+                                            <div class='radio__icon'></div>
+                                        </div>
+                                        <div class='radio__title'>Selected</div>
+                                    </div>
+                                </label>
+                                <label class='radio'>
+                                    <input type='radio' name='radio-name' class='radio__input' disabled>
+                                    <div class='radio__state'>
+                                        <div class='radio__control'>
+                                            <div class='radio__icon'></div>
+                                        </div>
+                                        <div class='radio__title'>Disabled</div>
+                                    </div>
+                                </label>
+                                <label class='toggle'>
+                                    <input type='checkbox' class='toggle__input'>
+                                    <div class='toggle__state'>
+                                        <div class='toggle__control'>
+                                            <div class='toggle__icon'></div>
+                                        </div>
+                                        <div class='toggle__title'>Off</div>
+                                    </div>
+                                </label>
+                                <label class='toggle'>
+                                    <input type='checkbox' class='toggle__input' checked>
+                                    <div class='toggle__state'>
+                                        <div class='toggle__control'>
+                                            <div class='toggle__icon'></div>
+                                        </div>
+                                        <div class='toggle__title'>On</div>
+                                    </div>
+                                </label>
+                                <label class='toggle'>
+                                    <input type='checkbox' class='toggle__input' disabled>
+                                    <div class='toggle__state'>
+                                        <div class='toggle__control'>
+                                            <div class='toggle__icon'></div>
+                                        </div>
+                                        <div class='toggle__title'>Disabled</div>
+                                    </div>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="tabs__content tabs__content_containers">
                     <div class="preview">
-                        <div class="container preview__card-grid">
+                        <div class="container preview__card-grid_1row">
                             <a class="preview__card" href='/pages/tooltip.html'>
                                 <div class='preview__card-body'>
                                     <div class="tooltip">
@@ -469,10 +571,67 @@
                                 </div>
                             </a>
                         </div>
+                        <div class='container'>
+                            <h2 class='main__title main__title_component'>Skeleton</h2>
+                            <div class="skeleton" style='max-width: 400px;'>
+                                <div class="skeleton__header">
+                                    <div class="skeleton__avatar"></div>
+                                    <div class="skeleton__line-group">
+                                        <div class="skeleton__line skeleton__line_short"></div>
+                                        <div class="skeleton__line skeleton__line_medium"></div>
+                                    </div>
+                                </div>
+                                <div class="skeleton__line-group">
+                                    <div class="skeleton__line"></div>
+                                    <div class="skeleton__line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='container'>
+                            <h2 class='main__title main__title_component'>Custom for elements</h2>
+                            <div class="preview__card-grid_1row">
+                                <div class='form-group'>
+                                    <label class='form-group__label' for='input'>Label</label>
+                                    <div class='form-group__control'>
+                                        <input class='form-group__input' type='text' id='input'
+                                            placeholder='Placeholder'>
+                                        <svg class='form-group__icon form-group__icon_success'>
+                                            <use href='/assets/images/sprite.svg#success'></use>
+                                        </svg>
+                                        <svg class='form-group__icon form-group__icon_error'>
+                                            <use href='/assets/images/sprite.svg#error'></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='form-group form-group_success'>
+                                    <label class='form-group__label' for='input'>Success</label>
+                                    <div class='form-group__control'>
+                                        <input class='form-group__input' type='text' id='input'
+                                            placeholder='Placeholder' value='Success'>
+                                        <svg class='form-group__icon form-group__icon_success'>
+                                            <use class='success' href='/assets/images/sprite.svg#success'></use>
+                                        </svg>
+                                        <svg class='form-group__icon form-group__icon_error'>
+                                            <use class='error' href='/assets/images/sprite.svg#error'></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class='form-group form-group_error'>
+                                    <label class='form-group__label' for='input'>Error</label>
+                                    <div class='form-group__control'>
+                                        <input class='form-group__input' type='text' id='input'
+                                            placeholder='Placeholder' value='Error'>
+                                        <svg class='form-group__icon form-group__icon_success'>
+                                            <use href='/assets/images/sprite.svg#success'></use>
+                                        </svg>
+                                        <svg class='form-group__icon form-group__icon_error'>
+                                            <use href='/assets/images/sprite.svg#error'></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- <div class="tabs__content tabs__content_templates">
-                </div> -->
             </section>
         </div>
     </main>
