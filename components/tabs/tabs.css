@@ -1,3 +1,7 @@
+.tabs {
+	background: var(--main-background-color);
+}
+
 .tabs__input {
 	position: absolute;
 	left: -100vw
@@ -14,7 +18,7 @@
 }
 
 .tabs__ladel {
-	color: var(--grey-3);
+	color: var(--black);
 	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
@@ -40,7 +44,6 @@
 #all-tab:checked ~ .tabs__scroller .tabs__ladel[for="all-tab"],
 #elements-tab:checked ~ .tabs__scroller .tabs__ladel[for="elements-tab"],
 #containers-tab:checked ~ .tabs__scroller .tabs__ladel[for="containers-tab"],
-#templates-tab:checked ~ .tabs__scroller .tabs__ladel[for="templates-tab"],
 #html-tab:checked:checked ~ .tabs__scroller .tabs__ladel[for="html-tab"],
 #css-tab:checked:checked ~ .tabs__scroller .tabs__ladel[for="css-tab"] {
 	color: var(--black);
@@ -51,7 +54,6 @@
 #all-tab:checked ~ .tabs__section .tabs__content_all-tab,
 #elements-tab:checked ~ .tabs__section .tabs__content_elements,
 #containers-tab:checked ~ .tabs__section .tabs__content_containers,
-#templates-tab:checked ~ .tabs__section .tabs__content_templates,
 #html-tab:checked ~ .tabs__section .tabs__content_html-code,
 #css-tab:checked ~ .tabs__section .tabs__content_css-code {
 	display: block;

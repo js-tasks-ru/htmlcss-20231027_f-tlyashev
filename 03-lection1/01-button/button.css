@@ -34,7 +34,7 @@
 
 .button_alternate {
     border: 1px solid var(--grey-3);
-    color: var(--grey-4);
+    color: var(--font-color);
 }
 
 .button_alternate:enabled:hover {

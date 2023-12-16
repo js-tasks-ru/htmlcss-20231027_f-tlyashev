@@ -28,7 +28,7 @@
 }
 
 .toggle__title {
-	color: var(--grey-4);
+	color: var(--font-color);
 	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
